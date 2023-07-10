@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>api3</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  <servlet-name>abc</servlet-name>
+<servlet-class>com.DAO.PostDAO</servlet-class>
+<servlet-class>com.DAO.UserDAO</servlet-class>
+<servlet-class>com.DB.DBConnect</servlet-class>
+<servlet-class>com.Servlet</servlet-class>
+
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>abc</servlet-name>
+  <url-pattern>/PostDAO</url-pattern>
+  <url-pattern>/UserDAO</url-pattern>
+   <url-pattern>/loginServlet</url-pattern>
+    <url-pattern>/UserServlet</url-pattern>
+     <url-pattern>/AddNotesServlet</url-pattern>
+      <url-pattern>/deleteServlet</url-pattern>
+       <url-pattern>/LogoutServlet</url-pattern>
+  <url-pattern>/NotesEditServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>
